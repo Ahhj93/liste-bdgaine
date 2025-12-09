@@ -8,7 +8,7 @@
 
 .allos-banner {
 	width: 100%;
-	max-width: 600px;
+	max-width: 1000px;
 	margin: 0 auto 30px auto;
 	background: url('banner-parchment.png') no-repeat center center;
 	background-size: 100% 100%;
@@ -19,6 +19,7 @@
 	padding: 18px 0 10px 0;
 	letter-spacing: 1px;
 	font-family: 'Georgia', serif;
+	height: 70px;
 }
 
 .allos-fanion-container {
@@ -44,7 +45,7 @@
 
 .liste-banner {
 	width: 100%;
-	max-width: 600px;
+	max-width: 1000px;
 	margin: 0 auto 30px auto;
 	background: url('banner-parchment.png') no-repeat center center;
 	background-size: 100% 100%;
@@ -55,6 +56,7 @@
 	padding: 18px 0 10px 0;
 	letter-spacing: 1px;
 	font-family: 'Georgia', serif;
+	height: 70px;
 }
 
 .liste-blasons {
@@ -69,6 +71,45 @@
 	flex-direction: column;
 	align-items: center;
 	position: relative;
+	cursor: pointer;
+	transition: transform 0.3s ease;
+}
+
+.blason:hover {
+	transform: scale(1.1);
+}
+
+.blason-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 40px;
+	width: 100%;
+	max-width: 1200px;
+}
+
+.blason-container.active .blason {
+	transform: translateX(-50px);
+}
+
+.blason-container.active .blason:hover {
+	transform: translateX(-50px) scale(1.1);
+}
+
+.video-container {
+	display: none;
+	opacity: 0;
+	transition: opacity 0.3s ease;
+}
+
+.video-container.active {
+	display: block;
+	opacity: 1;
+}
+
+.video-container iframe {
+	border-radius: 8px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 .blason-img {

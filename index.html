@@ -6,6 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Bdgainé</title>
 	<link rel="stylesheet" href="styles.css">
+	<script src="script.js" defer></script>
 </head>
 <body>
 	<div class="banner">
@@ -26,17 +27,44 @@
 <section id="la-liste" class="liste-section">
 	<div class="liste-banner">La liste</div>
 	<div class="liste-blasons">
-		<div class="blason">
-			<img src="blason.png" alt="Présentation" class="blason-img">
-			<div class="blason-label">Présentation</div>
+		<div class="blason-container" id="presentation-container">
+			<div class="blason" id="blason-presentation">
+				<img src="blason.png" alt="Présentation" class="blason-img">
+				<div class="blason-label">Présentation</div>
+			</div>
+			<div class="video-container" id="video-presentation">
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/_vhf0RZg0fg" 
+					title="Vidéo de présentation" frameborder="0" 
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+					allowfullscreen>
+				</iframe>
+			</div>
 		</div>
-		<div class="blason">
-			<img src="blason.png" alt="Les membres" class="blason-img">
-			<div class="blason-label">Les membres</div>
+		<div class="blason-container" id="membres-container">
+			<div class="blason" id="blason-membres">
+				<img src="blason.png" alt="Les membres" class="blason-img">
+				<div class="blason-label">Les membres</div>
+			</div>
+			<div class="video-container" id="video-membres">
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/_vhf0RZg0fg" 
+					title="Vidéo les membres" frameborder="0" 
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+					allowfullscreen>
+				</iframe>
+			</div>
 		</div>
-		<div class="blason">
-			<img src="blason.png" alt="La chorée" class="blason-img">
-			<div class="blason-label">La chorée</div>
+		<div class="blason-container" id="choree-container">
+			<div class="blason" id="blason-choree">
+				<img src="blason.png" alt="La chorée" class="blason-img">
+				<div class="blason-label">La chorée</div>
+			</div>
+			<div class="video-container" id="video-choree">
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/_vhf0RZg0fg" 
+					title="Vidéo la chorée" frameborder="0" 
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+					allowfullscreen>
+				</iframe>
+			</div>
 		</div>
 	</div>
 </section>
