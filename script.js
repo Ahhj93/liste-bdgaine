@@ -25,4 +25,28 @@ document.addEventListener('DOMContentLoaded', function() {
 	setupBlasonToggle('blason-presentation', 'presentation-container', 'video-presentation');
 	setupBlasonToggle('blason-membres', 'membres-container', 'video-membres');
 	setupBlasonToggle('blason-choree', 'choree-container', 'video-choree');
+	
+	// Gestion du dropdown "Nous suivre"
+	const nousSuivreBtn = document.getElementById('nous-suivre-btn');
+	const socialDropdown = document.getElementById('social-dropdown');
+	let isSocialVisible = false;
+	
+	nousSuivreBtn.addEventListener('click', function(e) {
+		e.preventDefault();
+		if (!isSocialVisible) {
+			socialDropdown.classList.add('active');
+			isSocialVisible = true;
+		} else {
+			socialDropdown.classList.remove('active');
+			isSocialVisible = false;
+		}
+	});
+	
+	// Fermer le dropdown si on clique ailleurs
+	document.addEventListener('click', function(e) {
+		if (!nousSuivreBtn.contains(e.target) && !socialDropdown.contains(e.target)) {
+			socialDropdown.classList.remove('active');
+			isSocialVisible = false;
+		}
+	});
 });
