@@ -218,6 +218,7 @@ main {
 }
 .banner-dragon.right {
 	right: 10vw;
+	transform: scaleX(-1);
 }
 
 .banner-menu {
