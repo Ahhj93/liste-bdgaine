@@ -1,31 +1,37 @@
-// Gestion du clic sur le blason Présentation
+// Gestion du clic sur les blasons (une seule vidéo à la fois)
 document.addEventListener('DOMContentLoaded', function() {
-	// Fonction générique pour gérer le toggle des blasons
-	function setupBlasonToggle(blasonId, containerId, videoId) {
-		const blason = document.getElementById(blasonId);
-		const container = document.getElementById(containerId);
-		const video = document.getElementById(videoId);
-		
-		let isVideoVisible = false;
-		
-		blason.addEventListener('click', function() {
-			if (!isVideoVisible) {
-				container.classList.add('active');
-				video.classList.add('active');
-				isVideoVisible = true;
-			} else {
-				container.classList.remove('active');
-				video.classList.remove('active');
-				isVideoVisible = false;
-			}
+	const blasonConfigs = [
+		{ blasonId: 'blason-presentation', containerId: 'presentation-container', videoId: 'video-presentation' },
+		{ blasonId: 'blason-membres', containerId: 'membres-container', videoId: 'video-membres' },
+		{ blasonId: 'blason-choree', containerId: 'choree-container', videoId: 'video-choree' }
+	];
+
+	const blasonItems = blasonConfigs
+		.map(({ blasonId, containerId, videoId }) => ({
+			blason: document.getElementById(blasonId),
+			container: document.getElementById(containerId),
+			video: document.getElementById(videoId)
+		}))
+		.filter(({ blason, container, video }) => blason && container && video);
+
+	function hideAllVideos() {
+		blasonItems.forEach(({ container, video }) => {
+			container.classList.remove('active');
+			video.classList.remove('active');
 		});
 	}
-	
-	// Configuration pour chaque blason
-	setupBlasonToggle('blason-presentation', 'presentation-container', 'video-presentation');
-	setupBlasonToggle('blason-membres', 'membres-container', 'video-membres');
-	setupBlasonToggle('blason-choree', 'choree-container', 'video-choree');
-	
+
+	blasonItems.forEach(({ blason, container, video }) => {
+		blason.addEventListener('click', function() {
+			const isActive = container.classList.contains('active');
+			hideAllVideos();
+			if (!isActive) {
+				container.classList.add('active');
+				video.classList.add('active');
+			}
+		});
+	});
+
 	// Gestion du dropdown "Nous suivre"
 	const nousSuivreBtn = document.getElementById('nous-suivre-btn');
 	const socialDropdown = document.getElementById('social-dropdown');
