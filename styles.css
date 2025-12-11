@@ -240,6 +240,26 @@ main {
 	color: #7a4c13;
 }
 
+@media (max-width: 768px) {
+	.banner {
+		height: auto;
+		padding: 20px 10px;
+		flex-direction: column;
+		gap: 6px;
+	}
+
+	.banner-menu {
+		flex-direction: column;
+		gap: 4px;
+		align-items: center;
+	}
+
+	.banner-link {
+		font-size: 1em;
+		padding: 3px 6px;
+	}
+}
+
 .nous-suivre-wrapper {
 	position: relative;
 }
