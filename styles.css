@@ -135,6 +135,28 @@
 	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
+/* Layout mobile : vidéo sous le blason */
+@media (max-width: 768px) {
+	.blason-container {
+		flex-direction: column;
+		gap: 20px;
+	}
+
+	.blason-container.active .blason {
+		transform: translateX(0);
+	}
+
+	.blason-container.active .blason:hover {
+		transform: scale(1.1);
+	}
+
+	.video-container iframe {
+		width: 100%;
+		max-width: 360px;
+		height: 203px;
+	}
+}
+
 .blason-img {
 	width: 240px;
 	height: auto;
