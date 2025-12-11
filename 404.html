@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>404 - Page non trouvée | Bdgainé</title>
+	<link rel="stylesheet" href="styles.css">
+	<style>
+		.error-404 {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			min-height: 60vh;
+			text-align: center;
+			padding: 40px 20px;
+		}
+
+		.error-404-title {
+			font-size: 8em;
+			color: #6b4a1b;
+			font-family: 'Papyrus', 'Georgia', serif;
+			font-weight: bold;
+			margin: 0;
+			text-shadow: 2px 3px 3px #d2b48c;
+		}
+
+		.error-404-subtitle {
+			font-size: 2em;
+			color: #6b4a1b;
+			font-family: 'Georgia', serif;
+			font-weight: bold;
+			margin: 20px 0;
+		}
+
+		.error-404-message {
+			font-size: 1.2em;
+			color: #8f6429;
+			font-family: 'Georgia', serif;
+			margin: 20px 0 40px 0;
+			max-width: 600px;
+		}
+
+		.error-404-btn {
+			background: url('banner-parchment.png') no-repeat center center;
+			background-size: 100% 100%;
+			color: #3e2200;
+			text-decoration: none;
+			font-weight: bold;
+			font-size: 1.3em;
+			font-family: 'Georgia', serif;
+			padding: 15px 40px;
+			transition: transform 0.2s, color 0.2s;
+			display: inline-block;
+		}
+
+		.error-404-btn:hover {
+			transform: scale(1.05);
+			color: #7a4c13;
+		}
+
+		@media (max-width: 768px) {
+			.error-404-title {
+				font-size: 5em;
+			}
+
+			.error-404-subtitle {
+				font-size: 1.5em;
+			}
+
+			.error-404-message {
+				font-size: 1em;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="banner">
+		<img src="logo.png" alt="Dragon gauche" class="banner-dragon left">
+		<nav class="banner-menu">
+			<a href="index.html" class="banner-link">Accueil</a>
+			<a href="index.html#la-liste" class="banner-link">La liste</a>
+			<a href="index.html#les-allos" class="banner-link">Les ALLOs</a>
+		</nav>
+		<img src="logo.png" alt="Dragon droit" class="banner-dragon right">
+	</div>
+
+	<main class="error-404">
+		<div class="error-404-title">404</div>
+		<div class="error-404-subtitle">Oups ! Page non trouvée</div>
+		<p class="error-404-message">
+			Il semblerait que cette page n'existe pas ou ait été déplacée. 
+			Le dragon gardien du Bdgainé ne l'a pas trouvée dans ses archives...
+		</p>
+		<a href="index.html" class="error-404-btn">Retour à l'accueil</a>
+	</main>
+
+	<footer class="footer">
+		<p>Fait avec 💚 par Bryan et Lou-Jane</p>
+	</footer>
+</body>
+</html>
