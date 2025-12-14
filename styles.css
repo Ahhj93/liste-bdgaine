@@ -429,3 +429,18 @@ main {
 	font-family: 'Georgia', serif;
 	font-weight: bold;
 }
+
+.github-link {
+	max-width: 1280px;
+	margin: 12px auto 24px auto;
+	text-align: center;
+}
+.github-link a {
+	color: #3e2200;
+	font-weight: bold;
+	text-decoration: none;
+}
+.github-link a:hover {
+	color: #7a4c13;
+	text-decoration: underline;
+}
