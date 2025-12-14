@@ -128,6 +128,24 @@
 	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
+.video-link-btn {
+	display: inline-block;
+	background-color: #d2b48c;
+	color: #3e2200;
+	text-decoration: none;
+	padding: 14px 28px;
+	font-size: 1.1em;
+	font-weight: bold;
+	border-radius: 10px;
+	box-shadow: 0 4px 8px rgba(0,0,0,0.25);
+	transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.video-link-btn:hover {
+	transform: translateY(-2px);
+	box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+}
+
 /* CTA Membres */
 .members-cta-container {
 	display: none;
