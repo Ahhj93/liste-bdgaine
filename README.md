@@ -2,14 +2,6 @@
 
 Site web médiéval pour la liste Bdgainé avec présentation interactive, vidéos et réseaux sociaux.
 
-## Fonctionnalités
-
-- 🎨 Design parchemin médiéval
-- 🎬 Blasons cliquables avec vidéos
-- 📱 Responsive mobile
-- 🐉 Navigation avec dragons
-- 🔗 Liens réseaux sociaux
-
 ## Fichiers
 
 - `index.html` - Page principale
