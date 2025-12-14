@@ -42,22 +42,32 @@
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	gap: 15px;
+	display: grid;
+	gap: 12px;
 	width: 100%;
-	max-width: 600px;
-	padding-bottom: 50px;
+	max-width: 640px;
+	padding-bottom: 100px;
+	text-align: center;
 }
 
 .allo-item {
 	color: #ffffff;
-	font-size: 1.8em;
+	font-size: 1.3em;
 	font-family: 'Georgia', serif;
 	font-weight: bold;
 	text-align: center;
 	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 640px) {
+	.allos-liste {
+		grid-template-columns: 1fr;
+		gap: 10px;
+	}
+
+	.allo-item {
+		font-size: 1.1em;
+	}
 }
 /* Section La liste */
 .liste-section {
