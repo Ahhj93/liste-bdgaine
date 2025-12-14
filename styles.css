@@ -10,7 +10,7 @@
 	width: 100%;
 	max-width: 1000px;
 	margin: 0 auto 30px auto;
-	background: url('banner-parchment.png') no-repeat center center;
+	background: url('assets/images/banner-parchment.png') no-repeat center center;
 	background-size: 100% 100%;
 	text-align: center;
 	font-size: 2.5em;
@@ -81,7 +81,7 @@
 	width: 100%;
 	max-width: 1000px;
 	margin: 0 auto 30px auto;
-	background: url('banner-parchment.png') no-repeat center center;
+	background: url('assets/images/banner-parchment.png') no-repeat center center;
 	background-size: 100% 100%;
 	text-align: center;
 	font-size: 2.5em;
@@ -191,7 +191,7 @@ body {
 	margin: 0;
 	padding: 0;
 	min-height: 100vh;
-	background: #cab885 url('parchment-bg.jpg') repeat-y center top;
+	background: #cab885 url('assets/images/parchment-bg.jpg') repeat-y center top;
 	background-size: 100% auto;
 	font-family: 'Georgia', serif;
 }
@@ -207,7 +207,7 @@ main {
 	max-width: 1280px;
 	margin-left: auto;
 	margin-right: auto;
-	background: url('banner-parchment.png') no-repeat center center;
+	background: url('assets/images/banner-parchment.png') no-repeat center center;
 	background-size: 100% 100%;
 	display: flex;
 	align-items: center;
@@ -354,7 +354,7 @@ main {
 .footer {
 	margin-top: 60px;
 	text-align: center;
-	background: url('banner-parchment.png') no-repeat center center;
+	background: url('assets/images/banner-parchment.png') no-repeat center center;
 	background-size: 100% 100%;
 	max-width: 1280px;
 	margin-left: auto;
