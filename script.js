@@ -2,7 +2,7 @@
 document.addEventListener('DOMContentLoaded', function() {
 	const blasonConfigs = [
 		{ blasonId: 'blason-presentation', containerId: 'presentation-container', videoId: 'video-presentation' },
-		{ blasonId: 'blason-membres', containerId: 'membres-container', videoId: 'video-membres' },
+		{ blasonId: 'blason-membres', containerId: 'membres-container', videoId: 'members-cta' },
 		{ blasonId: 'blason-choree', containerId: 'choree-container', videoId: 'video-choree' }
 	];
 
@@ -55,4 +55,42 @@ document.addEventListener('DOMContentLoaded', function() {
 			isSocialVisible = false;
 		}
 	});
+
+	// Modal Membres
+	const membersCtaBtn = document.querySelector('.members-cta-btn');
+	const membersModal = document.getElementById('members-modal');
+
+	function openMembersModal() {
+		if (membersModal) {
+			membersModal.classList.add('show');
+			membersModal.setAttribute('aria-hidden', 'false');
+			document.body.style.overflow = 'hidden';
+		}
+	}
+
+	function closeMembersModal() {
+		if (membersModal) {
+			membersModal.classList.remove('show');
+			membersModal.setAttribute('aria-hidden', 'true');
+			document.body.style.overflow = '';
+		}
+	}
+
+	if (membersCtaBtn) {
+		membersCtaBtn.addEventListener('click', openMembersModal);
+	}
+
+	if (membersModal) {
+		membersModal.addEventListener('click', function(e) {
+			const target = e.target;
+			if (target && target.getAttribute('data-close') === 'true') {
+				closeMembersModal();
+			}
+		});
+		document.addEventListener('keydown', function(e) {
+			if (e.key === 'Escape') {
+				closeMembersModal();
+			}
+		});
+	}
 });

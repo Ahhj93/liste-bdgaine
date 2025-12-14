@@ -128,6 +128,80 @@
 	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
+/* CTA Membres */
+.members-cta-container {
+	display: none;
+	opacity: 0;
+	transition: opacity 0.3s ease;
+}
+.blason-container.active #members-cta.members-cta-container {
+	display: block;
+	opacity: 1;
+}
+.members-cta-btn {
+	background-color: #d2b48c; /* marron clair */
+	color: #3e2200;
+	border: none;
+	padding: 14px 22px;
+	font-size: 1.1em;
+	font-weight: bold;
+	border-radius: 10px;
+	box-shadow: 0 4px 8px rgba(0,0,0,0.25);
+	cursor: pointer;
+	transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.members-cta-btn:hover {
+	transform: translateY(-1px);
+	box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+}
+
+/* Modal */
+.modal {
+	position: fixed;
+	inset: 0;
+	display: none;
+}
+.modal.show {
+	display: block;
+}
+.modal-backdrop {
+	position: absolute;
+	inset: 0;
+	background: rgba(0,0,0,0.5);
+}
+.modal-content {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background: #f7f1e1;
+	border-radius: 12px;
+	padding: 12px;
+	box-shadow: 0 10px 24px rgba(0,0,0,0.4);
+	max-width: 90vw;
+	max-height: 85vh;
+}
+.modal-image {
+	max-width: 86vw;
+	max-height: 75vh;
+	display: block;
+	border-radius: 8px;
+}
+.modal-close {
+	position: absolute;
+	top: 6px;
+	right: 10px;
+	background: #6b4a1b;
+	color: #fff;
+	border: none;
+	border-radius: 50%;
+	width: 32px;
+	height: 32px;
+	font-size: 20px;
+	line-height: 32px;
+	cursor: pointer;
+}
+
 /* Layout mobile : vidéo sous le blason */
 @media (max-width: 768px) {
 	.blason-container {

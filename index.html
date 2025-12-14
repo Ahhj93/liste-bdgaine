@@ -62,12 +62,8 @@
 				<img src="assets/images/blason.png" alt="Les membres" class="blason-img">
 				<div class="blason-label">Les membres</div>
 			</div>
-			<div class="video-container" id="video-membres">
-				<iframe width="560" height="315" src="https://www.youtube.com/embed/_vhf0RZg0fg" 
-					title="Vidéo les membres" frameborder="0" 
-					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-					allowfullscreen>
-				</iframe>
+			<div class="members-cta-container" id="members-cta">
+				<button class="members-cta-btn" type="button">Découvrez les membres</button>
 			</div>
 		</div>
 		<div class="blason-container" id="choree-container">
@@ -97,5 +93,14 @@
 <footer class="footer">
 	<p>Fait avec 💚 par Bryan et Lou-Jane</p>
 </footer>
+
+<!-- Modal image membres -->
+<div id="members-modal" class="modal" aria-hidden="true" role="dialog" aria-modal="true">
+	<div class="modal-backdrop" data-close="true"></div>
+	<div class="modal-content" role="document">
+		<button class="modal-close" aria-label="Fermer" data-close="true">×</button>
+		<img src="assets/images/TestOrganigrame.jpg" alt="Organigramme des membres" class="modal-image">
+	</div>
+</div>
 </body>
 </html>
