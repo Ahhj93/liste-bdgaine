@@ -1,3 +1,34 @@
+/* Section La soirée */
+.soiree-section {
+	margin-top: 60px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.soiree-banner {
+	width: 100%;
+	max-width: 1000px;
+	margin: 0 auto 30px auto;
+	background: url('assets/images/banner-parchment.png') no-repeat center center;
+	background-size: 100% 100%;
+	text-align: center;
+	font-size: 2.5em;
+	font-weight: bold;
+	color: #6b4a1b;
+	padding: 18px 0 10px 0;
+	letter-spacing: 1px;
+	font-family: 'Georgia', serif;
+	height: 70px;
+}
+
+.soiree-content {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	margin-top: 20px;
+}
+
 /* Section Les ALLOs */
 .allos-section {
 	margin-top: 60px;
