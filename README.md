@@ -3,3 +3,7 @@
 ## Auteurs
 
 Fait avec 💚 par Bryan et Lou-Jane
+
+## License
+
+Ce projet est sous license. Voir le fichier [LICENSE](LICENSE) pour plus de détails.
