@@ -6,4 +6,4 @@ Fait avec 💚 par Bryan et Lou-Jane
 
 ## License
 
-Ce projet est sous license. Voir le fichier [LICENSE](LICENSE) pour plus de détails.
+Ce projet est sous license MIT. Voir le fichier [LICENSE](LICENSE) pour plus de détails.
